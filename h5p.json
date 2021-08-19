@@ -1,0 +1,55 @@
+{
+  "title": "OER Quiz",
+  "language": "en",
+  "author": "OER",
+  "license": "CC BY-SA",
+  "licenseVersion": "4.0",
+  "authors":[{
+    "name":"Robert Fohlin",
+    "role":"Developer"
+  }],
+  "preloadedDependencies": [
+    {
+      "machineName": "EmbeddedJS",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Video",
+      "majorVersion": 1,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 3
+    },
+    {
+      "machineName": "H5PEditor.RangeList",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    },
+    {
+      "machineName": "H5PEditor.QuestionSetTextualEditor",
+      "majorVersion": 1,
+      "minorVersion": 3
+    },
+    {
+      "machineName": "H5PEditor.ShowWhen",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ],
+  "mainLibrary": "H5P.OERQuiz",
+"embedTypes": ["div"]
+}
