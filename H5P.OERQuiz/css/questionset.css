@@ -261,3 +261,12 @@
   padding-right: 0.5em;
   content: "\f08e";
 }
+
+.success-badge {
+  width: 166px;
+  min-height: 166px;
+  height: auto;
+  position: relative;
+  margin: 15px auto 15px;
+  display: block;
+}

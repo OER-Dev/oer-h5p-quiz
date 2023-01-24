@@ -574,6 +574,14 @@
                 }
               ]
             }
+          },
+          {
+            "name": "successBadge",
+            "type": "image",
+            "label": "Success badge image",
+            "importance": "low",
+            "optional": true,
+            "description": "An image to be shown together with the success feedback if the Quiz is successful" 
           }
         ]
       },

@@ -132,6 +132,9 @@ H5P.OERQuiz = function (options, contentId, contentData) {
           '  <% if (resulttext) { %>' +
           '  <div class="result-text"><%= resulttext %></div>' +
           '  <% } %>' +
+          '  <% if (successBadge) { %>' +
+          '  <img src="<%= successBadge %>" class="success-badge" />' +
+          '  <% } %>' +
           ' <% if (successUrl) { %>' +
             '<a href="<%= successUrl.url %>" target="_blank" class="h5p-joubelui-button gdl-questionset__endlink--success"><%= successUrl.linkLabel %></a>' +
           ' <% } %>' +
@@ -767,6 +770,7 @@ H5P.OERQuiz = function (options, contentId, contentData) {
         comment: params.endGame.showResultPage ? (success ? params.endGame.oldFeedback.successGreeting : params.endGame.oldFeedback.failGreeting) : undefined,
         resulttext: params.endGame.showResultPage ? (success ? params.endGame.oldFeedback.successComment : params.endGame.oldFeedback.failComment) : undefined,
         successUrl: successFeedback.successType === 'successUrl' && success ? successFeedback.successUrl : null,
+        successBadge: successFeedback.successBadge && successFeedback.successBadge.path && success ? H5P.getPath(successFeedback.successBadge.path, contentId) : null,
         failUrl: failFeedback.failType === 'failUrl' && !success ? failFeedback.failUrl : null,
         finishButtonText: params.endGame.finishButtonText,
         solutionButtonText: params.endGame.solutionButtonText,
